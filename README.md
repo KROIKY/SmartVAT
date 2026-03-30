@@ -1,38 +1,38 @@
-# SmartVAT este o aplicație desktop dezvoltată în C#, creată pentru a automatiza procesul de recuperare a TVA-ului pentru tranzacții intracomunitare (UE). Aplicația rezolvă problema procesării manuale a volumelor mari de date prin extragerea informațiilor direct din facturile electronice în format XML și pregătirea datelor pentru declarația oficială (D318).
+﻿# SmartVAT este o aplicatie desktop dezvoltata in C#, creata pentru a automatiza procesul de recuperare a TVA-ului pentru tranzactii intracomunitare (UE). Aplicatia rezolva problema procesarii manuale a volumelor mari de date prin extragerea informatiilor direct din facturile electronice in format XML si pregatirea datelor pentru declaratia oficiala (D318).
 
-## Deși formularele oficiale pot afișa mesaje de eroare sau incompatibilitate în aplicațiile standard, această aplicație depășește aceste limitări prin organizarea și manipularea directă a seturilor de date XML care stau la baza acestor documente.
+## Desi formularele oficiale pot afisa mesaje de eroare sau incompatibilitate in aplicatiile standard, aceasta aplicatie depaseste aceste limitari prin organizarea si manipularea directa a seturilor de date XML care stau la baza acestor documente.
 
-# Funcționalități Principale:
+# Functionalitati Principale:
 ## 1.Catalog de firme
-Aplicația permite stocarea și gestionarea detaliilor despre companiile implicate, pentru a evita redundanța datelor:
+Aplicatia permite stocarea si gestionarea detaliilor despre companiile implicate, pentru a evita redundanta datelor:
 
-Firme Locale (România): Datele firmei care solicită recuperarea (CUI, sediu, cont bancar).
+Firme Locale (Romania): Datele firmei care solicita recuperarea (CUI, sediu, cont bancar).
 
-Firme Externe: Bază de date cu partenerii din UE de la care se recuperează TVA-ul (Nume, Adresă, CUI).
+Firme Externe: Baza de date cu partenerii din UE de la care se recupereaza TVA-ul (Nume, Adresa, CUI).
 
 ## 2.Catalog de Utilizatori (Date Contabile)
-Aplicația include un modul dedicat pentru gestionarea profilului utilizatorului (contabilul care depune declarația):
+Aplicatia include un modul dedicat pentru gestionarea profilului utilizatorului (contabilul care depune declaratia):
 
 Profil Contabil: Stocarea datelor de identificare necesare.
 
-Securitate: Acces securizat pe bază de user și parolă pentru a proteja datele fiscale sensibile.
+Securitate: Acces securizat pe baza de user si parola pentru a proteja datele fiscale sensibile.
 
-Personalizare: Salvarea preferințelor de export și a istoricului de depuneri pentru fiecare utilizator în parte.
+Personalizare: Salvarea preferintelor de export si a istoricului de depuneri pentru fiecare utilizator in parte.
 
-## 3.Extragerea de date (fișiere tip XML) & Clasificare ANAF
-Automatizarea procesului de colectare a datelor prin identificarea automată a câmpurilor din factură și maparea lor pe codurile specifice declarației:
+## 3.Extragerea de date (fisiere tip XML) & Clasificare ANAF
+Automatizarea procesului de colectare a datelor prin identificarea automata a campurilor din factura si maparea lor pe codurile specifice declaratiei:
 
-Mapping Coduri ANAF: Clasificarea automată a cheltuielilor (ex: Cod 1 pentru Motorină, Cod 4 pentru taxe, Cod 10 pentru ADBLUE etc.).
+Mapping Coduri ANAF: Clasificarea automata a cheltuielilor (ex: Cod 1 pentru Motorina, Cod 4 pentru taxe, Cod 10 pentru ADBLUE etc.).
 
-Identificatori: Numărul facturii și data emiterii.
+Identificatori: Numarul facturii si data emiterii.
 
-Informații Fiscale: Codul de înregistrare fiscală (CUI/VAT ID) al furnizorului.
+Informatii Fiscale: Codul de inregistrare fiscala (CUI/VAT ID) al furnizorului.
 
-Localizare: Țara de origine a serviciului/produsului și moneda tranzacției.
+Localizare: Tara de origine a serviciului/produsului si moneda tranzactiei.
 
-Valori Financiare: Baza impozabilă și valoarea exactă a TVA-ului de recuperat.
+Valori Financiare: Baza impozabila si valoarea exacta a TVA-ului de recuperat.
 
-## 4.Automatizarea Declarației
-Centralizare: Gruparea mai multor facturi într-o singură sesiune de lucru.
+## 4.Automatizarea Declaratiei
+Centralizare: Gruparea mai multor facturi intr-o singura sesiune de lucru.
 
-Export Inteligent: Generarea unui model de date structurat compatibil cu importul rapid în formularele electronice de tip XML utilizate de autoritățile fiscale.
+Export Inteligent: Generarea unui model de date structurat compatibil cu importul rapid in formularele electronice de tip XML utilizate de autoritatile fiscale.

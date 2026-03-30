@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,7 +22,7 @@ namespace SmartVAT.Data
                 string linie;
                 while ((linie = sr.ReadLine()) != null)
                 {
-                    // Evităm deserializarea dacă linia e goală
+                    // Evitam deserializarea daca linia e goala
                     if (string.IsNullOrWhiteSpace(linie)) continue;
                     
                     try

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace SmartVAT.Models
 {
@@ -18,7 +18,7 @@ namespace SmartVAT.Models
         public string ContIBAN { get; set; } = string.Empty;
         public string CodBIC_SWIFT { get; set; } = string.Empty;
 
-        // Titularul Contului este dedus automat ca fiind însăși denumirea Firmei
+        // Titularul Contului este dedus automat ca fiind insasi denumirea Firmei
         public string ObtineTitularCont() => Denumire;
 
         public override string ToString()

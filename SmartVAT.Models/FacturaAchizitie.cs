@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace SmartVAT.Models
@@ -11,11 +11,11 @@ namespace SmartVAT.Models
         
         public List<CheltuialaFactura> NaturaBunurilor { get; set; } = new List<CheltuialaFactura>();
 
-        // Total Factură
+        // Total Factura
         public decimal BazaImpozabila { get; set; }
         public decimal ValoareTVA { get; set; }
         
-        // Câmp SMART - Deductibilitatea este dictata automat de valoare intrinseca TVA!
+        // Camp SMART - Deductibilitatea este dictata automat de valoare intrinseca TVA!
         public decimal TvaDeductibila => ValoareTVA;
 
         public FurnizorUE FurnizorTemplate { get; set; } = new FurnizorUE();

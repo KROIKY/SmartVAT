@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -57,7 +57,7 @@ namespace SmartVAT.Models
             }
             else
             {
-                throw new ArgumentException($"Țara cu codul introdus ('{codTara}') nu este eligibilă sau nu există în nomenclatorul celor 26 de țări D318.");
+                throw new ArgumentException($"Tara cu codul introdus ('{codTara}') nu este eligibila sau nu exista in nomenclatorul celor 26 de tari D318.");
             }
         }
 

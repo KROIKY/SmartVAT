@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SmartVAT.ConsoleUI/1.0.0": {
+        "dependencies": {
+          "SmartVAT.Data": "1.0.0",
+          "SmartVAT.Models": "1.0.0"
+        },
+        "runtime": {
+          "SmartVAT.ConsoleUI.dll": {}
+        }
+      },
+      "SmartVAT.Data/1.0.0": {
+        "dependencies": {
+          "SmartVAT.Models": "1.0.0"
+        },
+        "runtime": {
+          "SmartVAT.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SmartVAT.Models/1.0.0": {
+        "runtime": {
+          "SmartVAT.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartVAT.ConsoleUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SmartVAT.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SmartVAT.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

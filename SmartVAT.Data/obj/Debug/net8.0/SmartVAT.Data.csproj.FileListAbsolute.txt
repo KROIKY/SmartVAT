@@ -1,0 +1,16 @@
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\bin\Debug\net8.0\SmartVAT.Data.deps.json
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\bin\Debug\net8.0\SmartVAT.Data.dll
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\bin\Debug\net8.0\SmartVAT.Data.pdb
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\bin\Debug\net8.0\SmartVAT.Models.dll
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\bin\Debug\net8.0\SmartVAT.Models.pdb
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.csproj.AssemblyReference.cache
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.AssemblyInfoInputs.cache
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.AssemblyInfo.cs
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.csproj.CoreCompileInputs.cache
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.sourcelink.json
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.D42447DD.Up2Date
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.dll
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\refint\SmartVAT.Data.dll
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\SmartVAT.Data.pdb
+D:\Facultate\RepositoryGitHUB\SmartVAT.Data\obj\Debug\net8.0\ref\SmartVAT.Data.dll

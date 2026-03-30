@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 
 namespace SmartVAT.Data
@@ -12,7 +12,7 @@ namespace SmartVAT.Data
         {
             if (File.Exists(FisierConfig))
             {
-                // Format așteptat: TipSalvare=FisierText
+                // Format asteptat: TipSalvare=FisierText
                 string linie = File.ReadAllText(FisierConfig).Trim();
                 if (linie.StartsWith("TipSalvare="))
                 {
