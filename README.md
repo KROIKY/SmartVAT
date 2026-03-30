@@ -1,6 +1,6 @@
 # SmartVAT este o aplicație desktop dezvoltată în C#, creată pentru a automatiza procesul de recuperare a TVA-ului pentru tranzacții intracomunitare (UE). Aplicația rezolvă problema procesării manuale a volumelor mari de date prin extragerea informațiilor direct din facturile electronice în format XML și pregătirea datelor pentru declarația oficială (D318).
 
-## Deși formularele oficiale de tip XFA PDF pot afișa mesaje de eroare sau incompatibilitate în cititoarele PDF standard, această aplicație depășește aceste limitări prin manipularea directă a seturilor de date XML care stau la baza acestor documente.
+## Deși formularele oficiale pot afișa mesaje de eroare sau incompatibilitate în aplicațiile standard, această aplicație depășește aceste limitări prin organizarea și manipularea directă a seturilor de date XML care stau la baza acestor documente.
 
 # Funcționalități Principale:
 ## 1.Catalog de firme
@@ -35,4 +35,4 @@ Valori Financiare: Baza impozabilă și valoarea exactă a TVA-ului de recuperat
 ## 4.Automatizarea Declarației
 Centralizare: Gruparea mai multor facturi într-o singură sesiune de lucru.
 
-Export Inteligent: Generarea unui fișier structurat compatibil cu importul de date în formularele inteligente (XFA) utilizate de autoritățile fiscale.
+Export Inteligent: Generarea unui model de date structurat compatibil cu importul rapid în formularele electronice de tip XML utilizate de autoritățile fiscale.
