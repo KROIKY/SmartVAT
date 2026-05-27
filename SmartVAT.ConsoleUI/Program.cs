@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using SmartVAT.Models;
@@ -111,7 +111,7 @@ namespace SmartVAT.ConsoleUI
             // Tratarea inteligenta a CUI-ului cu prefix.
             Console.Write("CUI FURNIZOR (Ex: ATU38992006): "); 
             fur.CuloareTVA_CIF = Console.ReadLine();
-            Console.WriteLine($" -> [Smart Extractor] Am preluat tara {fur.PrefixTaraExtras} si CUI efectiv {fur.CorpCuloareTVA}");
+            Console.WriteLine($" -> Am preluat tara {fur.PrefixTaraExtras} si CUI efectiv {fur.CorpCuloareTVA}");
 
             Console.Write("Denumire Furnizor (Ex: UNION TANK GMBH): "); fur.Denumire = Console.ReadLine();
             Console.Write("Adresa Sediu Furnizor: "); fur.Adresa = Console.ReadLine();
@@ -281,3 +281,4 @@ namespace SmartVAT.ConsoleUI
         }
     }
 }
+

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,7 +23,6 @@ namespace SmartVAT.Models
                 LunaInceput = minDate.Month;
                 LunaSfarsit = maxDate.Month;
 
-                // Fortam o perioada minimade 3 lu
                 // Diferenta dintre LunaSfarsit si LunaInceput trebuie sa fie >= 2 (Ex: Luna 1 la 3 inseamna 3-1=2).
                 while (LunaSfarsit - LunaInceput < 2)
                 {
@@ -57,7 +56,7 @@ namespace SmartVAT.Models
             }
             else
             {
-                throw new ArgumentException($"Tara cu codul introdus ('{codTara}') nu este eligibila sau nu exista in nomenclatorul celor 26 de tari D318.");
+                throw new ArgumentException($"Țara cu codul introdus ('{codTara}') nu este eligibilă sau nu există în lista celor 26 de țări D318.");
             }
         }
 

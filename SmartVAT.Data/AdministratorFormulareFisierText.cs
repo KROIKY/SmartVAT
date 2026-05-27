@@ -47,7 +47,7 @@ namespace SmartVAT.Data
             // true = append text la sfarsit
             using (StreamWriter sw = new StreamWriter(Fisier, true))
             {
-                // Vom salva starea intr-un singur string JSON (ca text plat) conform cerintei "structura prin care obiectele reies magic din fisierul text".
+                // Vom salva starea intr-un singur string JSON (ca text plat) .
                 // Scriem fiecare Dosar/Declaratie ca o linie separata
                 string linieText = JsonSerializer.Serialize(formular);
                 sw.WriteLine(linieText);
@@ -65,3 +65,4 @@ namespace SmartVAT.Data
         }
     }
 }
+

@@ -22,5 +22,24 @@ namespace SmartVAT.Data
         {
             return _furnizori.FirstOrDefault(f => f.CuloareTVA_CIF == cuiVAT);
         }
+
+        public void ActualizeazaFurnizor(string vechiCui, FurnizorUE furnizor)
+        {
+            var old = CautaDupaCUI(vechiCui);
+            if (old != null)
+            {
+                _furnizori.Remove(old);
+                _furnizori.Add(furnizor);
+            }
+        }
+
+        public void StergeFurnizor(string cuiVAT)
+        {
+            var old = CautaDupaCUI(cuiVAT);
+            if (old != null)
+            {
+                _furnizori.Remove(old);
+            }
+        }
     }
 }

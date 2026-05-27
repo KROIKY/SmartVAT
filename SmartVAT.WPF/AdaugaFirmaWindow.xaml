@@ -1,0 +1,127 @@
+<Window x:Class="SmartVAT.WPF.AdaugaFirmaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adaugă Firmă Nouă" Width="480" SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        Background="#F4F6F9" Foreground="#333333"
+        FontFamily="Segoe UI"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <Style x:Key="ActionBtnStyle" TargetType="Button">
+            <Setter Property="Background" Value="#3B5998"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="4" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="6"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="#333"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#555555"/>
+            <Setter Property="Padding" Value="0,0,0,3"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        
+        <DropShadowEffect x:Key="CardShadow" BlurRadius="10" ShadowDepth="2" Direction="270" Color="#D1D9E6" Opacity="0.5"/>
+    </Window.Resources>
+
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Title -->
+            <RowDefinition Height="Auto"/> <!-- Identificare -->
+            <RowDefinition Height="Auto"/> <!-- Contact -->
+            <RowDefinition Height="Auto"/> <!-- Eroare -->
+            <RowDefinition Height="Auto"/> <!-- Buttons -->
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="tbTitlu" Text="Adăugare Firmă" FontSize="22" FontWeight="Bold" Foreground="#222" Margin="0,0,0,15"/>
+
+        <!-- Date Identificare -->
+        <Border Grid.Row="1" Background="White" CornerRadius="8" Padding="20" Margin="0,0,0,15" Effect="{StaticResource CardShadow}">
+            <StackPanel>
+                <TextBlock Text="DATE IDENTIFICARE" Foreground="#888888" FontSize="11" Margin="0,0,0,10" FontWeight="Bold"/>
+                
+                <Label x:Name="lbDenumire" Content="Denumire Companie"/>
+                <TextBox x:Name="tbDenumire" Style="{StaticResource InputTextBoxStyle}"/>
+
+                <Label x:Name="lbCUI" Content="C.U.I (Cod Unic Înregistrare)"/>
+                <TextBox x:Name="tbCUI" Style="{StaticResource InputTextBoxStyle}"/>
+
+                <Label x:Name="lbDomiciliu" Content="Domiciliu Fiscal"/>
+                <TextBox x:Name="tbDomiciliu" Style="{StaticResource InputTextBoxStyle}"/>
+                
+                <Label x:Name="lbCodCAEN" Content="Cod CAEN"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <RadioButton x:Name="rbCaen4941" Content="4941" IsChecked="True"/>
+                </StackPanel>
+
+                <Label x:Name="lbTipCompanie" Content="Tip Companie (ComboBox)"/>
+                <ComboBox x:Name="cmbTipCompanie" Margin="0,0,0,10" Padding="5">
+                    <ComboBoxItem Content="SRL" IsSelected="True"/>
+                </ComboBox>
+            </StackPanel>
+        </Border>
+
+        <!-- Date Bancare & Contact -->
+        <Border Grid.Row="2" Background="White" CornerRadius="8" Padding="20" Margin="0,0,0,15" Effect="{StaticResource CardShadow}">
+            <StackPanel>
+                <TextBlock Text="DATE BANCARE ȘI CONTACT" Foreground="#888888" FontSize="11" Margin="0,0,0,10" FontWeight="Bold"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <Label x:Name="lbContIBAN" Content="Cont IBAN"/>
+                        <TextBox x:Name="tbContIBAN" Style="{StaticResource InputTextBoxStyle}"/>
+                        
+                        <Label x:Name="lbTelefonContabil" Content="Telefon Contabil"/>
+                        <TextBox x:Name="tbTelefonContabil" Style="{StaticResource InputTextBoxStyle}" Margin="0"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <Label x:Name="lbCodBIC_SWIFT" Content="Cod BIC/SWIFT"/>
+                        <TextBox x:Name="tbCodBIC_SWIFT" Style="{StaticResource InputTextBoxStyle}"/>
+                        
+                        <Label x:Name="lbEmailContabil" Content="Email Contabil"/>
+                        <TextBox x:Name="tbEmailContabil" Style="{StaticResource InputTextBoxStyle}" Margin="0"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <!-- Mesaj Eroare -->
+        <TextBlock x:Name="lbEroare" Grid.Row="3" Text="Eroare afisata aici" Foreground="#D8000C" FontWeight="SemiBold" Visibility="Hidden" Margin="0,0,0,15" TextWrapping="Wrap"/>
+
+        <!-- Botoane -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0">
+            <Button x:Name="btnReset" Content="Resetare" Width="100" Margin="0,0,10,0" Background="#DDDDDD" Foreground="#555555" Style="{StaticResource ActionBtnStyle}" Click="btnReset_Click"/>
+            <Button x:Name="btnAdauga" Content="Salvează Firma" Width="120" Style="{StaticResource ActionBtnStyle}" Click="btnAdauga_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

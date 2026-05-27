@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Facultate\RepositoryGitHUB\SmartVAT.WPF\obj\Debug\net8.0-windows\
+D:\Facultate\ApliacatiePiu\SmartVAT-main\SmartVAT.WPF\obj\Debug\net8.0-windows\
 SmartVAT.WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Facultate\RepositoryGitHUB\SmartVAT.WPF\App.xaml
-11407045341
+D:\Facultate\ApliacatiePiu\SmartVAT-main\SmartVAT.WPF\App.xaml
+5-45729596
 
-6-145726066
-200-621269636
-MainWindow.xaml;
+12-1160272916
+202-1789610317
+AdaugaFirmaWindow.xaml;AdaugaFurnizorWindow.xaml;ListaFacturiWindow.xaml;MainWindow.xaml;ProfilCompanieWindow.xaml;
 
-True
+False
 

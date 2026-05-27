@@ -8,6 +8,27 @@ namespace SmartVAT.Models
         public string Moneda { get; set; } = string.Empty;
     }
 
+    public enum CodEroareFirma
+    {
+        SUCCESS = 0,
+        DENUMIRE_GOALA = 1,
+        DENUMIRE_PREA_LUNGA = 2,
+        CUI_GOL = 3,
+        CUI_INVALID = 4,
+        DOMICILIU_GOL = 5,
+        DOMICILIU_PREA_LUNG = 6,
+        CAEN_GOL = 7,
+        CAEN_INVALID = 8,
+        IBAN_GOL = 9,
+        IBAN_INVALID = 10,
+        SWIFT_GOL = 11,
+        SWIFT_INVALID = 12,
+        TELEFON_GOL = 13,
+        TELEFON_INVALID = 14,
+        EMAIL_GOL = 15,
+        EMAIL_INVALID = 16
+    }
+
     /// <summary>
     /// Stocheaza valorile care nu se pot modifica (Constante - compile time).
     /// </summary>
@@ -18,6 +39,16 @@ namespace SmartVAT.Models
         
         // Versiunea Formularului suportata
         public const string VersiuneFormular = "v1.02";
+
+        // Limite Validare Formular Firma
+        public const int LungimeMaximaDenumire = 50;
+        public const int LungimeMaximaCUI = 10;
+        public const int LungimeMaximaCAEN = 4;
+        public const int LungimeMaximaDomiciliu = 100;
+        public const int LungimeMaximaIBAN = 24;
+        public const int LungimeMaximaSwift = 11;
+        public const int LungimeMaximaTelefon = 15;
+        public const int LungimeMaximaEmail = 50;
 
         // Tabelul complet oficial cu Tarile de Rambursare, Limbile si Monedele XSD ANAF
         public static readonly List<TaraUE> TariRambursare = new List<TaraUE>

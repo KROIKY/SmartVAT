@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VATRefundApplication xmlns="mfp:anaf:dgti:d318:declaratie:v1">
+  <codF1>
+    <formType>D318</formType>
+    <formId>318</formId>
+    <universalCode>D318_A1.0.0</universalCode>
+  </codF1>
+  <ApplicationReference>
+    <RefundingCountryCode>AT</RefundingCountryCode>
+    <Currency>EUR</Currency>
+    <Language>RO</Language>
+    <Year>0</Year>
+    <ApplicationType>1</ApplicationType>
+    <ReferenceNumber></ReferenceNumber>
+    <Annual>0</Annual>
+    <an_r>0</an_r>
+    <d_rec>0</d_rec>
+    <luna_r>0</luna_r>
+    <cif>43063304</cif>
+    <totalPlata_A>0</totalPlata_A>
+  </ApplicationReference>
+  <RefundPeriod>
+    <StartDate>0</StartDate>
+    <EndDate>0</EndDate>
+  </RefundPeriod>
+  <ProrateAdjustment>
+    <Year></Year>
+    <FinalProrate></FinalProrate>
+  </ProrateAdjustment>
+  <Applicant>
+    <NameFree>SC ALBATIMO TRANS SRL</NameFree>
+    <VATIdentificationNumber>43063304</VATIdentificationNumber>
+    <AddressFree>PARTESTII DE JOS NR.452, COM.PARTESTII DE JOS JUD.SUCEAVA</AddressFree>
+    <PostCode></PostCode>
+    <Phone>0000000000</Phone>
+    <EmailAddress>miky_miha@yahoo.com</EmailAddress>
+  </Applicant>
+  <BusinessDescription>
+    <BusinessActivity>4941</BusinessActivity>
+  </BusinessDescription>
+  <Representative>
+    <NameFree></NameFree>
+    <RepresentativeID></RepresentativeID>
+    <AddressFree></AddressFree>
+    <PostCode></PostCode>
+    <Phone></Phone>
+    <EmailAddress></EmailAddress>
+    <CountryCode></CountryCode>
+    <identificationType>TIN</identificationType>
+  </Representative>
+  <DetailedBankAccount>
+    <Total>0.00</Total>
+    <Currency>Empty</Currency>
+    <OwnerType>1</OwnerType>
+    <OwnerName>SC ALBATIMO TRANS SRL</OwnerName>
+    <IBAN>RO87INGB0000999910755772</IBAN>
+    <BIC>INGBROBU</BIC>
+  </DetailedBankAccount>
+  <PurchaseInformation />
+  <ImportInformation />
+  <DocumentCopy />
+  <NumberOfDocuments>
+    <AtachatedFiles>0</AtachatedFiles>
+    <PurchaseOrders>0</PurchaseOrders>
+    <ImportOrders>0</ImportOrders>
+  </NumberOfDocuments>
+  <ApplicantSignature>
+    <NameFree>SC ALBATIMO TRANS SRL</NameFree>
+    <Position>Administrator</Position>
+  </ApplicantSignature>
+  <DocumentCopy1 />
+</VATRefundApplication>

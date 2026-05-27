@@ -8,5 +8,7 @@ namespace SmartVAT.Data
         void AdaugaFurnizor(FurnizorUE furnizor);
         List<FurnizorUE> GetAll();
         FurnizorUE CautaDupaCUI(string cuiVAT);
+        void ActualizeazaFurnizor(string vechiCui, FurnizorUE furnizor);
+        void StergeFurnizor(string cuiVAT);
     }
 }

@@ -28,5 +28,15 @@ namespace SmartVAT.Data
         {
             return _firme.FirstOrDefault(f => f.CUI == cui);
         }
+
+        public void ActualizeazaFirma(FirmaRO firma)
+        {
+            var old = CautaDupaCUI(firma.CUI);
+            if (old != null)
+            {
+                _firme.Remove(old);
+                _firme.Add(firma);
+            }
+        }
     }
 }

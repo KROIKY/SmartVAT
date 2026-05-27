@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace SmartVAT.Data
@@ -6,7 +6,7 @@ namespace SmartVAT.Data
     public static class FabricaDeStocare
     {
         private static readonly string FisierConfig = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "setari.config");
-        private static string _tipStocare = "Memorie"; // Default
+        private static string _tipStocare = "FisierText"; // Schimbat pe permanent
 
         static FabricaDeStocare()
         {
@@ -49,3 +49,4 @@ namespace SmartVAT.Data
         }
     }
 }
+

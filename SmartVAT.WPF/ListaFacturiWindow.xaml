@@ -1,0 +1,25 @@
+<Window x:Class="SmartVAT.WPF.ListaFacturiWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Facturi Excel" Height="600" Width="1000"
+        WindowStartupLocation="CenterOwner" Background="#F4F6F9">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="tbTitle" Text="Facturi Extrase pentru: " FontSize="18" FontWeight="Bold" Margin="0,0,0,15" Foreground="#333"/>
+
+        <DataGrid x:Name="dgFacturi" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" Background="White" RowHeight="30" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nr. Factură" Binding="{Binding NumarFactura}" Width="150" FontWeight="Bold"/>
+                <DataGridTextColumn Header="Data" Binding="{Binding DataFactura, StringFormat=dd.MM.yyyy}" Width="100"/>
+                <DataGridTextColumn Header="Furnizor" Binding="{Binding FurnizorTemplate.Denumire}" Width="250"/>
+                <DataGridTextColumn Header="Cod Fiscal" Binding="{Binding FurnizorTemplate.CuloareTVA_CIF}" Width="150"/>
+                <DataGridTextColumn Header="Baza (Valută)" Binding="{Binding BazaImpozabila}" Width="120"/>
+                <DataGridTextColumn Header="TVA (Valută)" Binding="{Binding ValoareTVA}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

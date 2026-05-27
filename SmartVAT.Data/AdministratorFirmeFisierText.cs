@@ -21,7 +21,6 @@ namespace SmartVAT.Data
                 string linie;
                 while ((linie = sr.ReadLine()) != null)
                 {
-                    // Denumire | CUI | DomiciliuFiscal | CAEN | TelefonContabil | EmailContabil | IBAN | BIC
                     var parti = linie.Split('|');
                     if (parti.Length >= 8)
                     {
@@ -36,6 +35,15 @@ namespace SmartVAT.Data
                             ContIBAN = parti[6],
                             CodBIC_SWIFT = parti[7]
                         };
+
+                        // Compatibilitate cu fișiere vechi care nu au proprietățile noi
+                        if (parti.Length >= 10)
+                        {
+                            Enum.TryParse(parti[8], out TipCompanie t);
+                            firma.Tip = t;
+                            firma.DataAdaugare = DateTime.Parse(parti[9]);
+                        }
+
                         rezultate.Add(firma);
                     }
                 }
@@ -47,16 +55,33 @@ namespace SmartVAT.Data
         {
             using (StreamWriter sw = new StreamWriter(Fisier, true))
             {
-                string linie = $"{firma.Denumire}|" +
-                               $"{firma.CUI}|" +
-                               $"{firma.DomiciliuFiscal}|" +
-                               $"{firma.CodCAEN}|" +
-                               $"{firma.TelefonContabil}|" +
-                               $"{firma.EmailContabil}|" +
-                               $"{firma.ContIBAN}|" +
-                               $"{firma.CodBIC_SWIFT}";
-                sw.WriteLine(linie);
+                sw.WriteLine(GenereazaLinie(firma));
             }
+        }
+
+        public void ActualizeazaFirma(FirmaRO firma)
+        {
+            var toate = IncarcaToate();
+            var veche = toate.FirstOrDefault(f => f.CUI == firma.CUI);
+            if (veche != null)
+            {
+                toate.Remove(veche);
+                toate.Add(firma);
+
+                // Suprascriem fișierul
+                using (StreamWriter sw = new StreamWriter(Fisier, false))
+                {
+                    foreach (var f in toate)
+                    {
+                        sw.WriteLine(GenereazaLinie(f));
+                    }
+                }
+            }
+        }
+
+        private string GenereazaLinie(FirmaRO firma)
+        {
+            return $"{firma.Denumire}|{firma.CUI}|{firma.DomiciliuFiscal}|{firma.CodCAEN}|{firma.TelefonContabil}|{firma.EmailContabil}|{firma.ContIBAN}|{firma.CodBIC_SWIFT}|{firma.Tip}|{firma.DataAdaugare}";
         }
 
         public List<FirmaRO> GetAll()

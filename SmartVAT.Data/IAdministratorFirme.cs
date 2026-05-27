@@ -8,5 +8,6 @@ namespace SmartVAT.Data
         void AdaugaFirma(FirmaRO firma);
         List<FirmaRO> GetAll();
         FirmaRO CautaDupaCUI(string cui);
+        void ActualizeazaFirma(FirmaRO firma);
     }
 }

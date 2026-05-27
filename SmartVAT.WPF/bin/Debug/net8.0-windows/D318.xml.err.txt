@@ -1,0 +1,2 @@
+F: validari globale
+ eroare structura: element necunoscut ('VATRefundApplication') in namesapace mfp:anaf:dgti:d318:declaratie:v1

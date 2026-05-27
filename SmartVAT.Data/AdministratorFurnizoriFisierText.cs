@@ -56,5 +56,39 @@ namespace SmartVAT.Data
         {
             return IncarcaToate().FirstOrDefault(f => f.CuloareTVA_CIF == cuiVAT);
         }
+
+        public void ActualizeazaFurnizor(string vechiCui, FurnizorUE furnizor)
+        {
+            var toate = IncarcaToate();
+            var vechi = toate.FirstOrDefault(f => f.CuloareTVA_CIF == vechiCui);
+            if (vechi != null)
+            {
+                toate.Remove(vechi);
+                toate.Add(furnizor);
+                RescrieFisier(toate);
+            }
+        }
+
+        public void StergeFurnizor(string cuiVAT)
+        {
+            var toate = IncarcaToate();
+            var vechi = toate.FirstOrDefault(f => f.CuloareTVA_CIF == cuiVAT);
+            if (vechi != null)
+            {
+                toate.Remove(vechi);
+                RescrieFisier(toate);
+            }
+        }
+
+        private void RescrieFisier(List<FurnizorUE> furnizori)
+        {
+            using (StreamWriter sw = new StreamWriter(Fisier, false))
+            {
+                foreach (var f in furnizori)
+                {
+                    sw.WriteLine($"{f.CuloareTVA_CIF}|{f.Denumire}|{f.Adresa}|{f.Telefon}");
+                }
+            }
+        }
     }
 }
