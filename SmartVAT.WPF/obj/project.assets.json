@@ -2,11 +2,65 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "ExcelDataReader/3.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "ExcelDataReader.DataSet/3.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ExcelDataReader": "3.8.0"
+        },
+        "compile": {
+          "lib/net8.0/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ExcelDataReader.DataSet.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/10.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "SmartVAT.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "SmartVAT.Models": "1.0.0"
+          "ExcelDataReader": "3.8.0",
+          "ExcelDataReader.DataSet": "3.8.0",
+          "SmartVAT.Models": "1.0.0",
+          "System.Text.Encoding.CodePages": "10.0.8"
         },
         "compile": {
           "bin/placeholder/SmartVAT.Data.dll": {}
@@ -28,6 +82,97 @@
     }
   },
   "libraries": {
+    "ExcelDataReader/3.8.0": {
+      "sha512": "kbUsldc5Fn9IKgzL2nr4VvN/mKqPqn8zGXUZpA7uL6svCA4psF+qMK519EhMvderpU4pAJoqk9DWpiSIkiZtXA==",
+      "type": "package",
+      "path": "exceldatareader/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.3.8.0.nupkg.sha512",
+        "exceldatareader.nuspec",
+        "lib/net462/ExcelDataReader.dll",
+        "lib/net462/ExcelDataReader.pdb",
+        "lib/net462/ExcelDataReader.xml",
+        "lib/net8.0/ExcelDataReader.dll",
+        "lib/net8.0/ExcelDataReader.pdb",
+        "lib/net8.0/ExcelDataReader.xml",
+        "lib/netstandard2.0/ExcelDataReader.dll",
+        "lib/netstandard2.0/ExcelDataReader.pdb",
+        "lib/netstandard2.0/ExcelDataReader.xml",
+        "lib/netstandard2.1/ExcelDataReader.dll",
+        "lib/netstandard2.1/ExcelDataReader.pdb",
+        "lib/netstandard2.1/ExcelDataReader.xml"
+      ]
+    },
+    "ExcelDataReader.DataSet/3.8.0": {
+      "sha512": "+eQg5oinHir7ayE/rF4dedvy8J6FBDG8RDyKFQsS/VZG9ygrnNgW6U8JSlrfGfe3DxYgbVoVwYV9Hbk63JQJFQ==",
+      "type": "package",
+      "path": "exceldatareader.dataset/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.dataset.3.8.0.nupkg.sha512",
+        "exceldatareader.dataset.nuspec",
+        "lib/net462/ExcelDataReader.DataSet.dll",
+        "lib/net462/ExcelDataReader.DataSet.pdb",
+        "lib/net462/ExcelDataReader.DataSet.xml",
+        "lib/net8.0/ExcelDataReader.DataSet.dll",
+        "lib/net8.0/ExcelDataReader.DataSet.pdb",
+        "lib/net8.0/ExcelDataReader.DataSet.xml",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.xml",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.pdb",
+        "lib/netstandard2.1/ExcelDataReader.DataSet.xml"
+      ]
+    },
+    "System.Text.Encoding.CodePages/10.0.8": {
+      "sha512": "WU6i/0KsH43ZeNCXVpm8JGwaj5Chs4Sup2Mwj9JSq62jzSyJQFqoarTpUhXQ+tXCXsUoVTHhxw+1ZhFm20rrmg==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/10.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net10.0/System.Text.Encoding.CodePages.dll",
+        "lib/net10.0/System.Text.Encoding.CodePages.xml",
+        "lib/net462/System.Text.Encoding.CodePages.dll",
+        "lib/net462/System.Text.Encoding.CodePages.xml",
+        "lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "lib/net9.0/System.Text.Encoding.CodePages.dll",
+        "lib/net9.0/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net10.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net10.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net9.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net9.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.10.0.8.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "SmartVAT.Data/1.0.0": {
       "type": "project",
       "path": "../SmartVAT.Data/SmartVAT.Data.csproj",
@@ -41,6 +186,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "ExcelDataReader >= 3.8.0",
+      "ExcelDataReader.DataSet >= 3.8.0",
       "SmartVAT.Data >= 1.0.0",
       "SmartVAT.Models >= 1.0.0"
     ]
@@ -52,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
+      "projectUniqueName": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
       "projectName": "SmartVAT.WPF",
-      "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
+      "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\obj\\",
+      "outputPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,11 +225,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj": {
-              "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj"
+            "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj": {
+              "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj"
             },
-            "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj": {
-              "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj"
+            "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj": {
+              "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj"
             }
           }
         }
@@ -101,6 +248,16 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "ExcelDataReader": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
+          "ExcelDataReader.DataSet": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

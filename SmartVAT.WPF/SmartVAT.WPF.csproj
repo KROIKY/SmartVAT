@@ -1,5 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\SmartVAT.Models\SmartVAT.Models.csproj" />
+    <ProjectReference Include="..\SmartVAT.Data\SmartVAT.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.8.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.8.0" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -7,10 +17,5 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\SmartVAT.Data\SmartVAT.Data.csproj" />
-    <ProjectReference Include="..\SmartVAT.Models\SmartVAT.Models.csproj" />
-  </ItemGroup>
 
 </Project>

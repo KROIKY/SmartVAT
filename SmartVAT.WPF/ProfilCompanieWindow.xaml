@@ -1,0 +1,75 @@
+<Window x:Class="SmartVAT.WPF.ProfilCompanieWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Profilul Companiei" Width="600" SizeToContent="Height"
+        WindowStartupLocation="CenterOwner"
+        Background="#181818" Foreground="White"
+        FontFamily="Segoe UI"
+        ResizeMode="NoResize">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Title -->
+            <RowDefinition Height="Auto"/> <!-- Main Body Box -->
+            <RowDefinition Height="Auto"/> <!-- Footer Contact -->
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Profilul Companiei" FontSize="26" Foreground="#00A2D3" Margin="0,0,0,20" FontWeight="Light"/>
+
+        <!-- Caseta Identificare Financiara -->
+        <Border Grid.Row="1" Background="#242424" CornerRadius="8" Padding="30" Margin="0,0,0,20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Coloana STÂNGA -->
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="DENUMIRE COMPANIE" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtDenumire" Text="SC EXEMPLE SRL" Foreground="White" FontSize="20" FontWeight="SemiBold" Margin="0,5,0,20" TextWrapping="Wrap"/>
+
+                    <TextBlock Text="C.U.I. (COD UNIC ÎNREGISTRARE)" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtCUI" Text="RO1234567" Foreground="White" FontSize="18" Margin="0,5,0,20"/>
+
+                    <TextBlock Text="DOMICILIU FISCAL" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtDomiciliu" Text="Strada Mare Nr 1, Bucuresti" Foreground="White" FontSize="16" Margin="0,5,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Coloana DREAPTA -->
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="CONT IBAN" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtIBAN" Text="RO00XXXX000000000000" Foreground="#47E4A5" FontSize="18" Margin="0,5,0,20" TextWrapping="Wrap"/>
+
+                    <TextBlock Text="BANCĂ (SWIFT)" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtSWIFT" Text="INGBROBU" Foreground="White" FontSize="18" Margin="0,5,0,20"/>
+
+                    <TextBlock Text="COD CAEN" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtCAEN" Text="0000" Foreground="White" FontSize="18" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Caseta Footer (Contact) -->
+        <Border Grid.Row="2" Background="#242424" CornerRadius="8" Padding="30">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="TELEFON CONTABIL" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtTelefon" Text="07XX XXX XXX" Foreground="White" FontSize="18" Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="EMAIL CONTABIL" Foreground="#888" FontSize="11" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtEmail" Text="email@companie.ro" Foreground="#00A2D3" FontSize="18" Margin="0,5,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

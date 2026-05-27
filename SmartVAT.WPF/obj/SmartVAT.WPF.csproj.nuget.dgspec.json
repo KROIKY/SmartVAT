@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj": {}
+    "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj": {
+    "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj",
+        "projectUniqueName": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj",
         "projectName": "SmartVAT.Data",
-        "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj",
+        "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\obj\\",
+        "outputPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj": {
-                "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj"
+              "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj": {
+                "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj"
               }
             }
           }
@@ -53,6 +53,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[10.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -73,14 +87,14 @@
         }
       }
     },
-    "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj": {
+    "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj",
+        "projectUniqueName": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj",
         "projectName": "SmartVAT.Models",
-        "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj",
+        "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\obj\\",
+        "outputPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,14 +152,14 @@
         }
       }
     },
-    "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj": {
+    "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
+        "projectUniqueName": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
         "projectName": "SmartVAT.WPF",
-        "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
+        "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\SmartVAT.WPF.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.WPF\\obj\\",
+        "outputPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.WPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -167,11 +181,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj": {
-                "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Data\\SmartVAT.Data.csproj"
+              "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj": {
+                "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Data\\SmartVAT.Data.csproj"
               },
-              "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj": {
-                "projectPath": "D:\\Facultate\\RepositoryGitHUB\\SmartVAT.Models\\SmartVAT.Models.csproj"
+              "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj": {
+                "projectPath": "D:\\Facultate\\ApliacatiePiu\\SmartVAT-main\\SmartVAT.Models\\SmartVAT.Models.csproj"
               }
             }
           }
@@ -190,6 +204,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
